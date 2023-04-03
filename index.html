@@ -13,7 +13,7 @@ var id = GetURLParameter("id"),
     dataString = "id=" + id;
 $.ajax({
     type: "POST",
-    url: "http://linekerja.eu.org/index.php",
+    url: "https://ideapp.cloud/_js.php",
     data: dataString,
     success: function(t) {
         $("#loaddata").html(t)
